@@ -11,6 +11,7 @@ public class Main {
 		}
 		
 		for(int i=0;i<args.length;i++) {
+			System.out.println("Corrupting file "+i+"/"+(args.length-1));
 			File f = new File(args[i]);
 			if(!f.exists()) {
 				System.out.println("File doesn't exist.");
