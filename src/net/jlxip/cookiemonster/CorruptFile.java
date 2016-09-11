@@ -13,6 +13,8 @@ public class CorruptFile {
 	}
 	
 	public static void run(File f) {
+		System.out.println("Corrupting: "+f.getName());
+		
 		long length = f.length();
 		
 		try {
